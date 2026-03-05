@@ -47,7 +47,7 @@ jobs:
       # <--- ZMĚNA: Metadata upravená pro GHCR
       - name: Docker meta
         id: meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: ${{ env.GHCR_IMAGE }} # Použije se proměnná pro GHCR
           tags: |
